@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: hsl(218deg, 23%, 16%);
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 10px;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.advice-tag {
+  color: hsl(150deg, 100%, 66%);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.25rem;
+}
+
+.advice {
+  color: hsl(193deg, 38%, 86%);
+  font-size: 1.45rem;
+  padding: 1.55rem;
+}
+
+.divider {
+  padding-bottom: 1.3rem;
+}
+
+button {
+  width: 60px;
+  aspect-ratio: 1/1;
+  border: none;
+  border-radius: 100%;
+  background-color: hsl(150deg, 100%, 66%);
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: calc(100% - 30px);
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+button:hover {
+  box-shadow: 0 0 15px 10px hsla(150deg, 100%, 66%, 0.4);
+}
+button img {
+  width: 1.35rem;
+}
+
+footer {
+  color: hsl(193deg, 38%, 86%);
+}
+footer a {
+  color: hsl(150deg, 100%, 66%);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    max-width: 500px;
+  }
+}/*# sourceMappingURL=main.css.map */

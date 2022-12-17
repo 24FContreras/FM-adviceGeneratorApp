@@ -1,0 +1,98 @@
+//COLORS
+$cyan: hsl(193, 38%, 86%);
+$neon: hsl(150, 100%, 66%);
+$grayBlue: hsl(217, 19%, 38%);
+$darkGrayBlue: hsl(217, 19%, 24%);
+$darkBlue: hsl(218, 23%, 16%);
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  background-color: $darkBlue;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $darkGrayBlue;
+  border-radius: 10px;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.advice-tag {
+  color: $neon;
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .25rem;
+}
+
+.advice {
+  color: $cyan;
+  font-size: 1.45rem;
+  padding: 1.55rem;
+}
+
+.divider {
+  padding-bottom: 1.3rem;
+}
+
+button {
+  width: 60px;
+  aspect-ratio: 1/1;
+  border: none;
+  border-radius: 100%;
+  background-color: $neon;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: calc(100% - 30px);
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: box-shadow .3s ease;
+
+  &:hover {
+    box-shadow: 0 0 15px 10px hsla(150, 100%, 66%, 0.4);
+  }
+
+  img {
+    width: 1.35rem;
+  }
+}
+
+footer {
+  color: $cyan;
+
+  a {
+    color: $neon;
+    text-decoration: none;
+    transition: color .3s ease;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+
+@media screen and (min-width:800px) {
+  main {
+    max-width: 500px;
+  }
+}
