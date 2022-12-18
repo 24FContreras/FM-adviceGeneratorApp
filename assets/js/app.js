@@ -5,7 +5,10 @@ const adviceID = document.querySelector("#adviceID");
 const advice = document.querySelector("#advice");
 
 const fetchAdvice = async () => {
-  const res = await fetch("https://api.adviceslip.com/advice");
+  const res = await fetch("https://api.adviceslip.com/advice", {
+    method: "GET",
+    cache: "no-cache",
+  });
   const data = await res.json();
 
   adviceID.textContent = data.slip.id;
